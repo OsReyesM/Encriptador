@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-primario: rgb(147, 207, 206);
+    --color-secundario: #9FC490;
+    --color-destacado: #001B2E;
+    --fuente-basica: "Inter", sans-serif;
+    --fuente-secundaria: "Poppins", sans-serif;
+    --color-footer: #4C3957;
+}
+
+*{
+    
+    background: var(--color-primario) ;
+    font-family: var(--fuente-basica);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+    background: none;
+}
+
+main {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    background: none;
+    resize: none;
+}
+
+.area-texto {
+    background: none;
+    border: none;
+    color: var(--color-destacado);
+    margin-top: 30px;
+    text-transform: lowercase;
+    font-size: 1rem;
+    opacity: 70%;
+    resize: none;
+    
+}
+
+::placeholder {color: white;}
+    .area-texto:focus {
+        outline: none;
+        background: none;
+    }
+
+.mensaje {
+     background:#8D99AE;
+     background-image: url(/img/Muñeco.png);
+     background-repeat: no-repeat;
+     background-size: fixed;
+     border: 2px;
+     border-radius: 24px;
+     color: var(--color-destacado);
+     margin-left: 50px;
+     margin-top: 30px;
+     padding-left: 1.25rem;
+     font-size: 1rem;
+     width: 60%;
+     height: 50%;
+     resize: none;
+}
+
+.mensaje:focus {
+    outline: none;
+    background: none;
+}
+
+.botones {
+    display: flex;
+    background: none;
+}
+
+.boton-encriptar {
+    background:none;
+    background-color:#6667ab;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    width: 150px;
+    font-size: 0.8rem;
+}
+
+.boton-desencriptar {
+    background:none;
+    background: #6667ab;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color:#ffffff;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 30px;
+    width:180px;
+    font-size: 0.8rem;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: black;
+    position: absolute;
+    font-family: var(--fuente-basica);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.areaAdvertencia_logo {
+    width: 0.5rem;
+}
+
+.Requisito{
+    display:inline;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.mensajeDeError{
+    background:none;
+    font-size: 0.8rem;
+    color: #c90334;
+    background:none;
+}
+
+#seccion1, #seccion2, #error, #unos{
+    background:none;
+}
+
+.autor {
+    background:none;
+    font-size: 0.9rem;
+    text-align: center;
+    background:none;
+    color: var(--color-destacado);
+    font-size: 0.9rem;
+    padding: 2%;
+ 
+}
+
+.informacion {
+    color: black;
+    font-size: 12px;
+}
+
+.iconos{
+    background:none;
+    text-align: center;
+    background:none;
+
+
+}
+
+#encabezado{
+    background:none;
+    color:rgb(47, 48, 48);
+    text-align: left;
+    font-size: 0.5rem;
+
+}
+
+
+@media (max-width: 1200px){
+
+    .cuerpoPrincipal{
+        flex-direction: column;
+        padding: 3%;
+        width: auto;
+        margin-left: 0%;
+        align-content: center;
+        justify-content: center;
+        
+    }
+
+    .logo {
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 10%;
+        background: none;
+    }
+
+    #encabezado{
+
+        font-size: 0.5rem;
+        justify-content: center;
+    }
+    .cuerpoPrincipal{
+        justify-content: center;
+    }
+    .area-texto{
+        width: 100%;
+        padding: 1%;
+    }
+    .boton-encriptar{
+        width: auto;
+        height: auto;
+    }
+    .boton-desencriptar{
+        width: auto;
+        height: auto;
+    }
+    .mensaje{
+        width: 70%;
+        height: 40%;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        position: absolute;
+        margin-left: 0px;
+    }
+    .botoncopiar{
+        align-items: center;
+    }
+    .copiar{
+        width: auto;
+        height: auto;
+        margin-top: 300px;
+        font-size: 0.8rem;
+    }
+
+    .autor {
+
+        font-size: 0.7rem;
+        padding: 2%;
+        margin-top: 50px;
+     
+    }
+    
+    .Requisito {
+         color: black;
+        font-size: 12px;
+        }
+
+    .footer{
+        padding: 1%;
+        width: auto;
+        margin-top: 300px;
+        font-size: 0.3rem;
+
+    }
+    
+}
